@@ -1,0 +1,343 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    background: #edf4fa;
+    color: #243b53;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(110deg, #102a43, #176b87);
+    box-shadow: 0 4px 12px #102a4320;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-brand img,
+.footer-logo {
+    background: white;
+    border: 2px solid #d4af37;
+    margin: 5px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.navbar-brand img,
+.hero-logo,
+.footer-logo,
+.login-logo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand img:hover,
+.hero-logo:hover,
+.footer-logo:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 0 18px #d4af3780;
+}
+
+.nav-link {
+    color: #eaf4f8 !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #7de3d1 !important;
+    transform: translateY(-3px);
+}
+
+.dashboard-banner {
+    background: linear-gradient(120deg, #102a43, #087e8b);
+    color: white;
+    border-radius: 18px;
+    animation: fadeUp 0.7s ease both;
+    transition: box-shadow 0.4s ease;
+}
+
+.dashboard-banner:hover {
+    box-shadow: 0 12px 30px #087e8b50;
+}
+
+.dashboard-banner h1,
+.dashboard-banner p {
+    color: white;
+}
+
+.hero-logo {
+    width: 150px;
+    max-width: 100%;
+    border: 3px solid #d4af37;
+    border-radius: 50%;
+}
+
+.section-heading h2,
+.stat-number {
+    color: #102a43;
+    font-weight: bold;
+}
+
+.section-heading p {
+    color: #627d98;
+}
+
+.card {
+    border: 1px solid #dce7ef;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #102a4310;
+    animation: fadeUp 0.6s ease both;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px #102a432b;
+}
+
+.card-header {
+    background: white;
+    border-bottom: 1px solid #dce7ef;
+}
+
+.stat-icon,
+.category-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: #dcecf3;
+    color: #087e8b;
+    font-weight: bold;
+    transition: 0.35s;
+}
+
+.card:hover .stat-icon,
+.info-card:hover .category-number {
+    background: #087e8b;
+    color: white;
+    transform: rotate(-6deg) scale(1.1);
+}
+
+.table thead th {
+    background: #dcecf3;
+    color: #102a43;
+}
+
+.table thead th,
+.table tbody td {
+    white-space: nowrap;
+}
+
+.table-hover tbody tr > * {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.table-hover tbody tr:hover > * {
+    background: #dff5f2;
+    color: #102a43;
+}
+
+.badge {
+    padding: 7px 10px;
+    transition: 0.25s;
+}
+
+.badge:hover {
+    transform: scale(1.08);
+    box-shadow: 0 3px 8px #102a4320;
+}
+
+.btn {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 7px 16px #087e8b40;
+}
+
+.btn-primary,
+.login-button {
+    background: #087e8b;
+    border-color: #087e8b;
+}
+
+.btn-primary:hover,
+.login-button:hover {
+    background: #066773;
+    border-color: #066773;
+}
+
+.btn-light:hover {
+    background: #dff5f2;
+    color: #102a43;
+}
+
+.site-footer {
+    background: #102a43;
+    color: #eaf4f8;
+}
+
+.site-footer p {
+    transition: color 0.3s ease;
+}
+
+.site-footer p:hover {
+    color: #7de3d1;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: linear-gradient(135deg, #102a43, #087e8b);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px #071a2b50;
+    animation: fadeUp 0.6s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 45px #071a2b65;
+}
+
+.login-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+    border-radius: 50%;
+    margin-bottom: 18px;
+}
+
+.login-logo:hover {
+    transform: scale(1.08);
+}
+
+.login-label {
+    color: #087e8b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-card h1 {
+    color: #102a43;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.login-description {
+    color: #627d98;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.login-card .form-control {
+    min-height: 45px;
+    border-radius: 8px;
+}
+
+.login-card .form-control:focus {
+    border-color: #087e8b;
+    box-shadow: 0 0 0 3px #087e8b25;
+}
+
+.login-card .form-check-input:checked {
+    background-color: #087e8b;
+    border-color: #087e8b;
+}
+
+.login-button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.login-link {
+    color: #087e8b;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.login-link:hover {
+    color: #102a43;
+    text-decoration: underline;
+}
+
+.login-footer {
+    color: #627d98;
+    font-size: 12px;
+    margin-top: 24px;
+}
+
+section {
+    scroll-margin-top: 85px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-logo {
+        width: 95px;
+    }
+
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+    .dashboard-banner h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 25px 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
